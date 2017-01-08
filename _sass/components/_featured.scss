@@ -1,0 +1,17 @@
+
+// COMPONENTS / FEATURED
+// -----------------------------------------------------------------------------
+
+
+.featured {
+  border-bottom: 1px solid getColor(neutral, light);
+
+  header {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid getColor(neutral, light);
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}

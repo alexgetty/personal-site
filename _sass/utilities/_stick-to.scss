@@ -1,0 +1,29 @@
+
+// UTILITIES / STICK-TO
+// -----------------------------------------------------------------------------
+
+@mixin stick-to($position: "top-left", $margin-v: 0, $margin-h: $margin-v){
+  position: absolute;
+
+  @if $position == "top" {
+    top: $margin-v;
+  } @else if $position == "top-right" {
+    top: $margin-v;
+    right: $margin-h;
+  } @else if $position == "right" {
+    right: $margin-h;
+  } @else if $position == "bottom-right" {
+    bottom: $margin-v;
+    right: $margin-h;
+  } @else if $position == "bottom" {
+    bottom: $margin-v;
+  } @else if $position == "bottom-left" {
+    bottom: $margin-v;
+    left: $margin-h;
+  } @else if $position == "left" {
+    left: $margin-h;
+  } @else if $position == "top-left" {
+    top: $margin-v;
+    left: $margin-h;
+  }
+}

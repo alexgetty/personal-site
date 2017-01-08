@@ -1,0 +1,16 @@
+
+// UTILITIES / COLOR
+// -----------------------------------------------------------------------------
+
+
+@function getColor($palette, $shade: base) {
+  @return map-get(map-get($colors, $palette), $shade);
+}
+
+@function getColor-rgb($palette, $shade: base) {
+  @return rgba(map-get(map-get($colors, $palette), $shade), 1);
+}
+
+@function getColor-rgba($alpha, $palette, $shade: base) {
+  @return rgba(map-get(map-get($colors, $palette), $shade), $alpha);
+}

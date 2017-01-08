@@ -2,22 +2,38 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<header class="cover">
+  {% include nav.html %}
+  <div class="title">
+    <h1>I create with paper, pixels <span class="-hightlight">&amp;</span> code.</h1>
+    <p>
+      <span itemprop="jobTitle">Designer</span> at
+      <a class="underline" href="http://andculture.com/" rel="external" target="_blank" itemprop="worksFor">Andculture</a> by day, half of
+      <a class="underline" href="http://hawkandsquirrel.co" rel="external" target="_blank" itemprop="brand">Hawk &amp; Squirrel</a> by night. Currently living and working in
+      <span itemprop="homeLocation workLocation" itemscope itemtype="http://schema.org/postaladdress">
+        <span itemprop="addressLocality">Harrisburg</span>,
+        <span itemprop="addressRegion">PA</span>.
+      </span>
+    </p>
+  </div>
+</header>
+<main role="main">
+  <section class="featured">
+    <header>
+      <h2>Newest Journal Entry</h2>
+      <a class="underline" href="{{site.url}}/journal/">View All</a>
+    </header>
+    {% assign post = site.posts.first %}
+    <a class="teaser" href="{{ post.url }}">
+      <article>
+        <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+        <h3>{{ post.title }}</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        {% if post.teaser %}
+        <p>{{ post.teaser }}</p>
+        {% endif %}
+      </article>
+    </a>
+  </section>
+</main>

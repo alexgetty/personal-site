@@ -1,0 +1,25 @@
+
+// BASE / FONTS
+// -----------------------------------------------------------------------------
+
+
+// Font Stack
+
+$fonts: (
+  primary: #{'Cardo', serif},
+  secondary: #{'Lato', sans-serif}
+);
+
+$weights: (
+  regular: 400,
+  bold: 700
+)
+
+
+// Font Accessors
+// Source: Utilities / Fonts
+
+/*
+getFont([font])
+getWeight([weight]);
+*/

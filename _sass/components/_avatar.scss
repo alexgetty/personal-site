@@ -1,0 +1,27 @@
+
+// COMPONENTS / CONTAINER
+// -----------------------------------------------------------------------------
+
+
+.avatar {
+  //@include fade-in();
+  position: relative;
+  height: 14rem;
+  width: 14em;
+  border-radius: 7rem;
+  overflow: hidden;
+  margin: 0 auto 2rem;
+
+  li {
+    position: absolute;
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

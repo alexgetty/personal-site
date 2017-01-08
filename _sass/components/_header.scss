@@ -1,0 +1,53 @@
+
+// COMPONENTS / HEADER
+// -----------------------------------------------------------------------------
+
+
+nav[role="banner"] {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  font-family: getFont(secondary);
+  text-transform: uppercase;
+  font-size: getSize(smaller);
+  letter-spacing: .24em;
+  display: flex;
+
+  @include from(medium){
+    font-size: getSize(smaller);
+  }
+
+  a{
+    text-decoration: none;
+    padding: 1rem;
+
+    &:hover {
+      color: getColor(primary);
+    }
+
+    & + a {
+      padding-left: 0;
+    }
+
+    &.-active {
+      color: getColor(primary);
+    }
+  }
+
+  .masthead {
+    flex-grow: 1;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+
+  .-dark & {
+    a {
+      color: getColor(neutral, lightest);
+
+      &:hover {
+        color: getColor(primary);
+      }
+    }
+  }
+}

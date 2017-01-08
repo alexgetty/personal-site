@@ -1,0 +1,28 @@
+
+// BASE / COLORS
+// -----------------------------------------------------------------------------
+
+
+// Color Map
+
+$colors: (
+  primary: (
+    base: #F9CB2F
+  ),
+  neutral: (
+    lightest: #FCFDFD,
+    light: #E9E7EC,
+    base: #756E7D,
+    darkest: #242325,
+  )
+);
+
+
+// Color Accessors
+// Source: Utilities / Color
+
+/*
+getColor(palette, [shade]);
+getColor-rgb(palette, [shade]);
+getColor-rgba(alpha, palette, [shade])
+*/

@@ -1,0 +1,12 @@
+
+// UTILITIES / FONTS
+// -----------------------------------------------------------------------------
+
+
+@function getFont($font: primary) {
+  @return map-get($fonts, $font);
+}
+
+@function getWeight($weight: regular) {
+  @return map-get($weights, $weight);
+}

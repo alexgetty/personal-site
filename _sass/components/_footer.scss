@@ -1,0 +1,22 @@
+
+// COMPONENTS / FOOTER
+// -----------------------------------------------------------------------------
+
+
+.container > footer {
+  @include fade-in();
+  background: getColor(neutral, lightest);
+  padding: .5rem 1rem;
+  text-align: center;
+  font-size: getSize(regular);
+  margin-top: 1rem;
+
+  a + a {
+    margin-left: .5em;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: getSize(small);
+  }
+}

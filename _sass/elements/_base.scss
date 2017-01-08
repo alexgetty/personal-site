@@ -1,0 +1,38 @@
+
+// ELEMENTS / BASE
+// -----------------------------------------------------------------------------
+
+
+:root {
+  @include molten-leading();
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: getColor(neutral, lightest);
+}
+
+header {
+  @include wrapper();
+  text-align: center;
+}
+
+main {
+  @include wrapper();
+  @include fade-in();
+  position: relative;
+  z-index: 10;
+
+  &.post {
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+  }
+}

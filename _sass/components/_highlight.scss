@@ -1,0 +1,40 @@
+
+// COMPONENTS / HIGHLIGHT
+// -----------------------------------------------------------------------------
+
+
+code {
+  border: 1px solid getColor(neutral, light);
+  border-radius: .2rem;
+  font-size: getSize(small);
+  color: getColor(neutral,darkest);
+  background: getColor-rgba(.2, neutral, light);
+  padding: .2rem .4rem;
+  white-space: nowrap;
+
+  pre & {
+    display: block;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+    max-width: 34rem;
+    overflow: hidden;
+  }
+}
+
+.language-html {
+  .nt {
+    color: getColor-rgba(.4, neutral);
+  }
+}
+
+.language-css {
+  .p {
+    color: getColor-rgba(.4, neutral);
+  }
+}
+
+.language-js {
+  .p, .o {
+    color: getColor-rgba(.4, neutral);
+  }
+}

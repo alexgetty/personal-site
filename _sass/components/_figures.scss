@@ -1,0 +1,32 @@
+
+// ELEMENTS / FIGURES
+// -----------------------------------------------------------------------------
+
+main figure {
+  margin: 3rem 0;
+
+  img {
+    width: 34rem;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: getSize(small);
+    color: getColor(neutral);
+    max-width: 30rem;
+    margin-top: .62rem;
+
+    @include from(medium){
+      font-size: getSize(small);
+      font-style: italic;
+    }
+  }
+
+  &.full {
+    img {
+      width: 100%;
+    }
+  }
+}

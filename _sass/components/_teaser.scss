@@ -1,0 +1,44 @@
+
+// COMPONENTS / TEASER
+// -----------------------------------------------------------------------------
+
+
+.teaser {
+  @include transition-hover();
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 3rem 2rem;
+
+  time {
+    font-size: getSize(smaller);
+    color: getColor(neutral);
+  }
+
+  h3 {
+    @include transition-hover();
+    margin-bottom: 0;
+  }
+
+  p {
+    font-weight: getWeight(regular);
+    margin: 1rem auto 0;
+    color: getColor(neutral, darkest);
+  }
+
+  &:hover {
+    background: getColor-rgba(.4, neutral, light);
+
+    h3 {
+      color: getColor(primary);
+    }
+
+    p {
+      color: getColor(neutral, darkest);
+    }
+  }
+
+  &.-large {
+    padding: 5rem 2rem;
+  }
+}
