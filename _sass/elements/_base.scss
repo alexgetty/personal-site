@@ -31,8 +31,8 @@ main {
   position: relative;
   z-index: 10;
 
+  // This needs to be part of a component
   &.post {
-    padding: 0 2rem;
     margin-bottom: 4rem;
   }
 }
