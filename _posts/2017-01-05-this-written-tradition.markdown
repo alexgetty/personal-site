@@ -1,9 +1,10 @@
 ---
 layout: post
 section: journal
-title:  "This Written Tradition"
+title:  This Written Tradition
 date:   2017-01-05
 categories: writing, thinking, civilization
+permalink: /journal/this-written-tradition
 ---
 
 The written word has been a pretty standard method of communication for a long time. It’s safe to say that this technology has had a huge impact on our civilization.
