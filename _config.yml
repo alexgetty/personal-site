@@ -24,6 +24,10 @@ permalink: "/:title"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 sass:
   sass_dir: _sass
