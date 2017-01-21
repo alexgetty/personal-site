@@ -4,20 +4,52 @@
 
 
 pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   overflow: auto;
   display: block;
-  word-break: break-all;
-  word-wrap: break-word;
+
+  code {
+    display: block;
+    margin: 0 auto;
+    max-width: 34rem;
+    word-break: break-all;
+    word-wrap: break-word;
+    tab-size: 2;
+    padding: .5rem 0;
+  }
+}
+
+p code {
+ white-space: pre;
+}
+
+pre code, .gist {
+  margin: 1rem auto 3rem;
+}
+
+.lineno {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: 0 .5rem;
+  font-size: getSize(small);
+  color: getColor-rgba(.38, neutral);
+  text-align: right;
+  padding-right: .5rem;
+}
+
+.code pre {
+  margin-left: .5rem;
 }
 
 code {
+  padding: .3rem .4rem .1rem;
+}
+
+code, .gist {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   border: 1px solid getColor(neutral, light);
   border-radius: .2rem;
   font-size: getSize(small);
   background: getColor-rgba(.2, neutral, light);
-  padding: .3rem .4rem .1rem;
-  white-space: nowrap;
 }
 
 .gist {
@@ -28,13 +60,8 @@ code {
   overflow: auto;
   word-wrap: normal;
   position: relative;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  border: 1px solid getColor(neutral, light);
-  border-radius: .2rem;
-  font-size: getSize(small);
-  background: getColor-rgba(.2, neutral, light);
-  white-space: nowrap;
   direction: ltr;
+  white-space: nowrap;
 
   .gist-data {
     overflow: auto;
@@ -48,7 +75,7 @@ code {
     overflow: hidden;
     padding: .5rem;
     font-family: getFont(secondary);
-    font-size: getSize(smaller);
+    font-size: getSize(small);
     line-height: 1;
   }
 
@@ -72,9 +99,9 @@ code {
 
   .blob-num {
     padding: 0 .5rem;
-    font-size: 12px;
-    line-height: 20px;
-    color: getColor(neutral);
+    font-size: getSize(small);
+    line-height: 1.5;
+    color: getColor-rgba(.38, neutral);
     text-align: right;
     white-space: nowrap;
     vertical-align: top;
@@ -94,27 +121,10 @@ code {
 
   .blob-code-inner {
     overflow: visible;
-    font-size: 12px;
+    font-size: getSize(small);
     color: getColor(neutral,dark);
     word-wrap: normal;
     white-space: pre
-  }
-
-  &::before {
-    content: attr(data-lang);
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: getColor(neutral, darkest);
-    font-family: getFont(secondary);
-    text-align: right;
-    text-transform: uppercase;
-    font-size: .6rem;
-    padding: .25rem .25rem 0 0;
-    line-height: 1.5;
-    height: 1.5rem;
-    font-weight: getWeight(bold);
-    letter-spacing: .1em;
   }
 }
 

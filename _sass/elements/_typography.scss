@@ -24,7 +24,6 @@ h2 {
   font-weight: getWeight(bold);
   color: getColor(neutral, darkest);
   margin-bottom: 1em;
-  text-align: center;
 }
 
 h3 {
@@ -39,22 +38,7 @@ p {
   max-width: 30rem;
   margin: 0 auto 1.6em;
   line-height: 1.6;
-
-  header & {
-    font-size: getSize(large);
-    max-width: 40rem;
-
-    @include until(medium){
-      margin: 2em 0;
-    }
-  }
-
-  main & {
-    padding: 0 1rem;
-  }
 }
-
-
 
 a {
   @include transition-hover();
@@ -62,7 +46,7 @@ a {
   color: getColor(neutral, darkest);
   font-weight: getWeight(bold);
 
-  &:hover {
+  &:hover, &.--active {
     color: getColor(primary);
   }
 }

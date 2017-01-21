@@ -3,45 +3,38 @@
 // -----------------------------------------------------------------------------
 
 
-nav[role="banner"] {
+.header {
   position: absolute;
-  width: 100%;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
   z-index: 999;
   font-family: getFont(secondary);
   text-transform: uppercase;
-  font-size: getSize(smaller);
+  // font-size: getSize(small);
   letter-spacing: .24em;
-  display: flex;
 
   @include from(medium){
     font-size: getSize(smaller);
   }
 
-  a{
-    text-decoration: none;
-    padding: 1rem;
-
-    &:hover {
-      color: getColor(primary);
-    }
-
-    & + a {
-      padding-left: 0;
-    }
-
-    &.-active {
-      color: getColor(primary);
-    }
-  }
-
   .masthead {
-    flex-grow: 1;
+    display: inline-block;
+    float: left;
     text-align: left;
-    margin-top: 1rem;
   }
 
+  nav {
+    display: inline-block;
+    float: right;
+    text-align: right;
+  }
 
-  .-dark & {
+  a + a {
+    padding-left: 1rem;
+  }
+
+  .--dark & {
     a {
       color: getColor(neutral, lightest);
 

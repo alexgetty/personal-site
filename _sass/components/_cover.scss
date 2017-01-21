@@ -9,7 +9,6 @@
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   background: getColor(neutral, lightest);
@@ -20,26 +19,33 @@
     z-index: 1;
     margin: auto;
     padding: 6rem 1rem;
-  }
+    text-align: center;
 
-  p {
-    margin: 0 auto;
-  }
+    h1 {
+      font-size: getSize(largest);
+      margin: 0 auto 1rem;
+      text-align: center;
 
-  time {
-    display: inline-block;
-    font-size: getSize(small);
-    opacity: .7;
-    margin-bottom: 1rem;
-  }
+      @include from(medium){
+        font-size: getSize(yuge);
+      }
+    }
 
-  h1 {
-    font-size: getSize(largest);
-    margin: 0 auto 1rem;
+    p {
+      font-size: getSize(large);
+      max-width: 40rem;
+      margin: 0 auto;
 
-    @include from(medium){
-      font-size: getSize(yuge);
-      margin: 0rem;
+      @include until(medium){
+        margin: 2em auto;
+      }
+    }
+
+    time {
+      display: inline-block;
+      font-size: getSize(small);
+      opacity: .7;
+      margin-bottom: 1rem;
     }
   }
 
@@ -84,24 +90,20 @@
     }
   }
 
-  &.-small {
+  &.--small {
     height: auto;
     min-height: 60vh;
     min-height: 16rem;
     overflow: auto;
   }
 
-  &.-variable {
+  &.--variable {
     height: auto;
     min-height: 0;
-
-    .title {
-      padding: 8rem 1rem 4rem;
-    }
-
+    overflow: visible;
   }
 
-  &.-dark {
+  &.--dark {
     color: getColor(neutral, lightest);
     background: getColor(neutral, darkest);
 

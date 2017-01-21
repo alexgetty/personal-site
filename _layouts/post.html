@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<header class="cover -variable">
-  {% include nav.html %}
-  <div class="title">
-    <time>{{ page.date | date: "%B %-d, %Y" }}</time>
-    <h1>{{ page.title }}</h1>
-  </div>
-</header>
-<main role="main" class="post">
+<article class="post">
+  <header class="cover --variable">
+    <div class="title">
+      <time>{{ page.date | date: "%B %-d, %Y" }}</time>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
   {{ page.content }}
-</main>
+</article>

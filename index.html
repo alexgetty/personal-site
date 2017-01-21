@@ -2,9 +2,7 @@
 layout: default
 ---
 
-
 <header class="cover">
-  {% include nav.html %}
   <div class="title">
     <h1>I create with paper, pixels <span class="-hightlight">&amp;</span> code.</h1>
     <p>
@@ -17,23 +15,6 @@ layout: default
       </span>
     </p>
   </div>
+  {% assign post = site.posts.first %}
+  <p>Read my newest journal entry: <a href="{{ post.url }}">{{ post.title }}</a></p>
 </header>
-<main role="main">
-  <section class="featured">
-    <header>
-      <h2>Newest Journal Entry</h2>
-      <a class="underline" href="{{site.url}}/journal/">View All</a>
-    </header>
-    {% assign post = site.posts.first %}
-    <a class="teaser" href="{{ post.url }}">
-      <article>
-        <time>{{ post.date | date: "%B %-d, %Y" }}</time>
-        <h3>{{ post.title }}</h3>
-
-        {% if post.teaser %}
-        <p>{{ post.teaser }}</p>
-        {% endif %}
-      </article>
-    </a>
-  </section>
-</main>

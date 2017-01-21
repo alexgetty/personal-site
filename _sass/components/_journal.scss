@@ -1,9 +1,10 @@
 
-// COMPONENTS / JOURNAL LIST
+// COMPONENTS / JOURNAL
 // -----------------------------------------------------------------------------
 
-
-.journal-list {
+// TODO:
+// [ ] This should be generalized so it's not just for the journal
+.journal {
   border-top: 1px solid getColor(neutral, light);
 
   li {

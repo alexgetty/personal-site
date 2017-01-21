@@ -1,5 +1,5 @@
 
-// COMPONENTS / CONTAINER
+// COMPONENTS / AVATAR
 // -----------------------------------------------------------------------------
 
 
@@ -10,6 +10,7 @@
   width: 14em;
   border-radius: 7rem;
   overflow: hidden;
+  padding: 0;
   margin: 0 auto 2rem;
 
   li {
@@ -22,6 +23,8 @@
   }
 
   img {
+    position: relative;
+    top: 0;
     max-width: 100%;
   }
 }
