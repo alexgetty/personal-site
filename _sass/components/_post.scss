@@ -23,7 +23,22 @@
     margin: 3rem auto 1rem;
   }
 
+  figure {
+    p + & {
+      margin-top: 1rem;
+    }
+
+    & + p {
+      margin-top: 2rem;
+    }
+  }
+
   .title {
     padding: 8rem 1rem 4rem;
+  }
+
+  footer {
+    margin: 4rem auto 2rem;
+    text-align: center;
   }
 }
