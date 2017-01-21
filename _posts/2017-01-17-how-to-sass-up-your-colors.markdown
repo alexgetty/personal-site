@@ -25,7 +25,6 @@ Maps were introduced in March 2014 with [Version 3.3.0](https://github.com/sass/
 In it’s simplest form, a Sass map can be used like this:
 
 {% highlight sass linenos %}
-// test
 $colors: (
 	primary: #F9CB2F,
 	secondary: #756E7D
