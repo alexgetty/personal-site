@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   background: getColor(neutral, lightest);
+  text-align: center;
 
   .title {
     @include fade-in();

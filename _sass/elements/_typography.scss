@@ -38,6 +38,10 @@ p {
   max-width: 30rem;
   margin: 0 auto 1.6em;
   line-height: 1.6;
+
+  @include until(medium){
+    padding: 0 1rem;
+  }
 }
 
 a {
