@@ -13,18 +13,18 @@
   }
 
   p {
-    font-size: getSize(small);
+    font-size: size(small);
     color: color(neutral);
     max-width: 30rem;
     margin-top: .62rem;
 
     @include from(medium){
-      font-size: getSize(small);
+      font-size: size(small);
       font-style: italic;
     }
   }
 
-  &.full {
+  &.-full {
     img {
       width: 100%;
     }

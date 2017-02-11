@@ -22,13 +22,13 @@ blockquote {
     z-index: 1;
     margin: 0;
     font-weight: weight(bold);
-    font-size: getSize(large);
+    font-size: size(large);
     color: color(neutral, darkest);
   }
 
   footer {
     max-width: 30rem;
     margin: .38rem 0 0;
-    font-size: getSize(small);
+    font-size: size(small);
   }
 }

@@ -13,28 +13,28 @@ body {
 }
 
 h1 {
-  font-size: getSize(largest);
+  font-size: size(largest);
   font-weight: weight(bold);
   color: color(neutral, darkest);
   max-width: 16em;
 }
 
 h2 {
-  font-size: getSize(larger);
+  font-size: size(larger);
   font-weight: weight(bold);
   color: color(neutral, darkest);
   margin-bottom: 1em;
 }
 
 h3 {
-  font-size: getSize(large);
+  font-size: size(large);
   font-weight: weight(bold);
   color: color(neutral, darkest);
 }
 
 
 p {
-  font-size: getSize(regular);
+  font-size: size(regular);
   max-width: 30rem;
   margin: 0 auto 1.6em;
   line-height: 1.6;

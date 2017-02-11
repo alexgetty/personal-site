@@ -1,13 +1,9 @@
 
-// PATTERNS / FADE IN
+// PATTERNS / ANIMATIONS
 // -----------------------------------------------------------------------------
 
 
-@mixin fade-in(){
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
+// Fade-in - elements increase opacity and move up
 
 @keyframes fade-in {
   from {

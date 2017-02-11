@@ -1,9 +1,9 @@
 
-// PATTERNS / MOLTEN LEADING
+// PATTERNS / LIQUID SCALE
 // -----------------------------------------------------------------------------
 
 
-@mixin molten-leading(){
+@mixin liquid-scale(){
   font-size: #{$min-size}px;
 
   @include from(medium){

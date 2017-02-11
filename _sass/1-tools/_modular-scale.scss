@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-$modular-scales: (
+$_modular-scales: (
   minor-second: 1.0666666667,
   major-second: 1.13,
   minor-third: 1.2,
@@ -22,15 +22,12 @@ $modular-scales: (
   double-octave: 4
 );
 
-@function getScale($ratio){
-  @return map-get($modular-scales, $ratio)
+@function scale($ratio){
+  @return map-get($_modular-scales, $ratio);
 }
 
-$scale: getScale(minor-third) !default;
 
-
-
-@function getLevel($level: 0, $direction: 'up') {
+@function level($level: 0, $direction: 'up') {
   @if $level == 0 {
     @return 1rem;
   } @else if $direction == 'up' {
@@ -40,22 +37,22 @@ $scale: getScale(minor-third) !default;
   }
 }
 
-@function getSize($level: regular) {
+@function size($level: regular) {
   @if $level == 'smallest' {
-    @return getLevel(3, down);
+    @return level(3, down);
   } @else if $level == 'smaller' {
-    @return getLevel(2, down);
+    @return level(2, down);
   } @else if $level == 'small' {
-    @return getLevel(1, down);
+    @return level(1, down);
   } @else if $level == 'regular' {
-    @return getLevel(0);
+    @return level(0);
   } @else if $level == 'large' {
-    @return getLevel(1);
+    @return level(1);
   } @else if $level == 'larger' {
-    @return getLevel(2);
+    @return level(2);
   } @else if $level == 'largest' {
-    @return getLevel(3);
+    @return level(3);
   } @else if $level == 'yuge' {
-    @return getLevel(4);
+    @return level(4);
   }
 }

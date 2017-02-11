@@ -4,11 +4,11 @@
 
 
 .container > footer {
-  @include fade-in();
+  @include animation('fade-in');
   background: color(neutral, lightest);
   padding: .5rem 1rem;
   text-align: center;
-  font-size: getSize(regular);
+  font-size: size(regular);
   margin-top: 1rem;
 
   a + a {
@@ -17,6 +17,6 @@
 
   p {
     margin-top: 1rem;
-    font-size: getSize(small);
+    font-size: size(small);
   }
 }

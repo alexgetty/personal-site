@@ -10,8 +10,9 @@
 }
 
 :root {
-  @include molten-leading();
+  @include liquid-scale();
 }
+
 
 html, body {
   height: 100%;
@@ -37,6 +38,6 @@ body {
 }
 
 main {
-  @include fade-in();
+  @include animation('fade-in');
   position: relative;
 }

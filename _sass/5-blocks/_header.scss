@@ -12,10 +12,10 @@
   font-family: font(secondary);
   text-transform: uppercase;
   letter-spacing: .24em;
-  font-size: getSize(small);
+  font-size: size(small);
 
   @include from(medium){
-    font-size: getSize(smaller);
+    font-size: size(smaller);
   }
 
   .masthead {
