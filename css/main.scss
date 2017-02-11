@@ -6,51 +6,8 @@
 // -----------------------------------------------------------------------------
 
 
-// Utilities
-
-@import "utilities/breakpoints",
-        "utilities/centered",
-        "utilities/color",
-        "utilities/fonts",
-        "utilities/math",
-        "utilities/modular-scale",
-        "utilities/transitions";
-
-
-// Base
-
-@import "base/reset",
-        "base/colors",
-        "base/fonts",
-        "base/layout",
-        "base/scale";
-
-
-// Patterns
-
-@import "patterns/fade-in",
-        "patterns/molten-leading",
-        "patterns/transitions",
-        "patterns/wrapper";
-
-
-// Elements
-
-@import "elements/base",
-        "elements/blockquote",
-        "elements/typography";
-
-
-// Components
-
-@import "components/avatar",
-        "components/container",
-        "components/cover",
-        "components/featured",
-        "components/footer",
-        "components/header",
-        "components/highlight",
-        "components/journal",
-        "components/photo",
-        "components/post",
-        "components/teaser";
+@import "1-tools/_tools",          // Helper functions and mixins
+        "2-settings/_settings",    // Site configuration variables
+        "3-patterns/_patterns",    // Modular design patterns
+        "4-elements/_elements",    // Base HTML elements and modifiers
+        "5-blocks/_blocks";        // Static UI components
