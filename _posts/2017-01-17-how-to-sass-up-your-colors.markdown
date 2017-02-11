@@ -125,11 +125,11 @@ h1 {
 }
 
 button {
-	background-color: getColor(primary);
+	background-color: color(primary);
 }
 
 .card {
-	border: 1px solid getColor(neutral);
+	border: 1px solid color(neutral);
 }
 
 .error {
