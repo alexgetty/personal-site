@@ -5,21 +5,12 @@
 
 // Font Stack
 
-$fonts: (
+$_fonts: (
   primary: #{'Cardo', serif},
   secondary: #{'Lato', sans-serif}
 );
 
-$weights: (
+$_weights: (
   regular: 400,
   bold: 700
 )
-
-
-// Font Accessors
-// Source: Utilities / Fonts
-
-/*
-getFont([font])
-getWeight([weight]);
-*/

@@ -10,9 +10,9 @@ blockquote {
   &:before {
     position: absolute;
     content: "\201C";
-    font-weight: getWeight(bold);
+    font-weight: weight(bold);
     font-size: 5rem;
-    color: getColor(neutral, light);
+    color: color(neutral, light);
     margin-left: -.32em;
     margin-top: -.48em;
   }
@@ -21,9 +21,9 @@ blockquote {
     position: relative;
     z-index: 1;
     margin: 0;
-    font-weight: getWeight(bold);
+    font-weight: weight(bold);
     font-size: getSize(large);
-    color: getColor(neutral, darkest);
+    color: color(neutral, darkest);
   }
 
   footer {

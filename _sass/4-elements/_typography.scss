@@ -3,33 +3,33 @@
 // -----------------------------------------------------------------------------
 
 .-hightlight {
-  color: getColor(primary);
+  color: color(primary);
 }
 
 body {
-  font-family: getFont(primary);
-  color: getColor(neutral);
+  font-family: font(primary);
+  color: color(neutral);
   line-height: 1.5;
 }
 
 h1 {
   font-size: getSize(largest);
-  font-weight: getWeight(bold);
-  color: getColor(neutral, darkest);
+  font-weight: weight(bold);
+  color: color(neutral, darkest);
   max-width: 16em;
 }
 
 h2 {
   font-size: getSize(larger);
-  font-weight: getWeight(bold);
-  color: getColor(neutral, darkest);
+  font-weight: weight(bold);
+  color: color(neutral, darkest);
   margin-bottom: 1em;
 }
 
 h3 {
   font-size: getSize(large);
-  font-weight: getWeight(bold);
-  color: getColor(neutral, darkest);
+  font-weight: weight(bold);
+  color: color(neutral, darkest);
 }
 
 
@@ -47,11 +47,11 @@ p {
 a {
   @include transition-hover();
   text-decoration: none;
-  color: getColor(neutral, darkest);
-  font-weight: getWeight(bold);
+  color: color(neutral, darkest);
+  font-weight: weight(bold);
 
   &:hover, &.--active {
-    color: getColor(primary);
+    color: color(primary);
   }
 }
 
@@ -74,14 +74,14 @@ a.underline {
       width: 100%;
       height: .12em;
       top: 1.8em;
-      background: getColor(neutral, light);
+      background: color(neutral, light);
     }
 
     &:hover{
-      color: getColor(neutral, darkest);
+      color: color(neutral, darkest);
       &:before {
         height: .7em;
-        background: getColor(primary);
+        background: color(primary);
       }
     }
   }
@@ -90,7 +90,7 @@ a.underline {
 
 
 time {
-  font-family: getFont(secondary);
+  font-family: font(secondary);
   text-transform: uppercase;
   letter-spacing: .2em;
 }

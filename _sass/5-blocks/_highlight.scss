@@ -28,7 +28,7 @@ p code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   padding: 0 .5rem;
   font-size: getSize(small);
-  color: getColor-rgba(.38, neutral);
+  color: color(neutral, base, .38);
   text-align: right;
   padding-right: .5rem;
 }
@@ -43,10 +43,10 @@ code {
 
 code, .gist {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  border: 1px solid getColor(neutral, light);
+  border: 1px solid color(neutral, light);
   border-radius: .2rem;
   font-size: getSize(small);
-  background: getColor-rgba(.2, neutral, light);
+  background: color(neutral, light, .2);
 
   @include until (medium) {
     border-radius: 0;
@@ -67,7 +67,7 @@ code, .gist {
   .gist-data {
     overflow: auto;
     word-wrap: normal;
-    border-bottom: 1px solid getColor(neutral, light);
+    border-bottom: 1px solid color(neutral, light);
     padding: .5rem 0;
     tab-size: 2;
   }
@@ -75,7 +75,7 @@ code, .gist {
   .gist-meta {
     overflow: hidden;
     padding: .5rem;
-    font-family: getFont(secondary);
+    font-family: font(secondary);
     font-size: getSize(small);
     line-height: 1;
   }
@@ -102,7 +102,7 @@ code, .gist {
     padding: 0 .5rem;
     font-size: getSize(small);
     line-height: 1.5;
-    color: getColor-rgba(.38, neutral);
+    color: color(neutral, base, .38);
     text-align: right;
     white-space: nowrap;
     vertical-align: top;
@@ -123,7 +123,7 @@ code, .gist {
   .blob-code-inner {
     overflow: visible;
     font-size: getSize(small);
-    color: getColor(neutral,dark);
+    color: color(neutral,dark);
     word-wrap: normal;
     white-space: pre
   }
@@ -133,11 +133,11 @@ code, .gist {
   white-space: pre;
 
   .pl-c {
-      color: getColor(neutral)l
+      color: color(neutral)l
   }
   .pl-c1,
   .pl-s .pl-v {
-      color: getColor(secondary);
+      color: color(secondary);
   }
   .pl-e,
   .pl-en {
@@ -145,14 +145,14 @@ code, .gist {
   }
   .pl-smi,
   .pl-s .pl-s1 {
-      color: getColor(neutral,darkest);
+      color: color(neutral,darkest);
   }
   .pl-ent {
-      color: getColor(status,success)l
+      color: color(status,success)l
   }
   .pl-k,
   .pl-bu {
-      color: getColor(status,error);
+      color: color(status,error);
   }
   .pl-s,
   .pl-pds,
@@ -161,26 +161,26 @@ code, .gist {
   .pl-sr .pl-cce,
   .pl-sr .pl-sre,
   .pl-sr .pl-sra {
-      color: getColor(secondary);
+      color: color(secondary);
   }
   .pl-v,
   .pl-smw {
-      color: getColor(status,error);
+      color: color(status,error);
   }
   .pl-ii {
       color: #f8f8f8;
-      background-color: getColor(status,error);
+      background-color: color(status,error);
   }
   .pl-c2 {
       color: #f8f8f8;
-      background-color: getColor(status,error);
+      background-color: color(status,error);
   }
   .pl-c2::before {
       content: "^M"
   }
   .pl-sr .pl-cce {
       font-weight: bold;
-      color: getColor(status,success);
+      color: color(status,success);
   }
   .pl-ml {
       color: #693a17
@@ -189,25 +189,25 @@ code, .gist {
   .pl-mh .pl-en,
   .pl-ms {
       font-weight: bold;
-      color: getColor(secondary);
+      color: color(secondary);
   }
   .pl-mq {
-      color: getColor(status,success);
+      color: color(status,success);
   }
   .pl-mi {
       font-style: italic;
-      color: getColor(neutral,dark);
+      color: color(neutral,dark);
   }
   .pl-mb {
       font-weight: bold;
-      color: getColor(neutral,dark);
+      color: color(neutral,dark);
   }
   .pl-md {
-      color: getColor(status,error);
+      color: color(status,error);
       background-color: #ffecec
   }
   .pl-mi1 {
-      color: getColor(status,success);
+      color: color(status,success);
       background-color: #eaffea
   }
   .pl-mc {
@@ -223,16 +223,16 @@ code, .gist {
       color: #795da3
   }
   .pl-mo {
-      color: getColor(secondary);
+      color: color(secondary);
   }
   .pl-ba {
-      color: getColor(neutral);
+      color: color(neutral);
   }
   .pl-sg {
       color: #c0c0c0
   }
   .pl-corl {
       text-decoration: underline;
-      color: getColor(secondary);
+      color: color(secondary);
   }
 }

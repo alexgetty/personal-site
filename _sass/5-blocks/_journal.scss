@@ -5,9 +5,9 @@
 // TODO:
 // [ ] This should be generalized so it's not just for the journal
 .journal {
-  border-top: 1px solid getColor(neutral, light);
+  border-top: 1px solid color(neutral, light);
 
   li {
-    border-bottom: 1px solid getColor(neutral, light);
+    border-bottom: 1px solid color(neutral, light);
   }
 }

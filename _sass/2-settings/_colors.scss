@@ -5,7 +5,7 @@
 
 // Color Map
 
-$colors: (
+$_colors: (
   primary: (
     base: #F9CB2F
   ),
@@ -23,13 +23,3 @@ $colors: (
     darkest: #242325,
   )
 );
-
-
-// Color Accessors
-// Source: Utilities / Color
-
-/*
-getColor(palette, [shade]);
-getColor-rgb(palette, [shade]);
-getColor-rgba(alpha, palette, [shade])
-*/

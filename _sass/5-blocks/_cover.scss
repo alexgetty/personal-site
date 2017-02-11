@@ -11,7 +11,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: getColor(neutral, lightest);
+  background: color(neutral, lightest);
   text-align: center;
 
   .title {
@@ -105,11 +105,11 @@
   }
 
   &.--dark {
-    color: getColor(neutral, lightest);
-    background: getColor(neutral, darkest);
+    color: color(neutral, lightest);
+    background: color(neutral, darkest);
 
     h1 {
-      color: getColor(neutral, lightest);
+      color: color(neutral, lightest);
     }
 
     figure img {

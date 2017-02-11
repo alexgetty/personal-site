@@ -5,7 +5,7 @@
 
 .container > footer {
   @include fade-in();
-  background: getColor(neutral, lightest);
+  background: color(neutral, lightest);
   padding: .5rem 1rem;
   text-align: center;
   font-size: getSize(regular);

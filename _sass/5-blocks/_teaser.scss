@@ -12,7 +12,7 @@
 
   time {
     font-size: getSize(smaller);
-    color: getColor(neutral);
+    color: color(neutral);
   }
 
   h3 {
@@ -21,20 +21,20 @@
   }
 
   p {
-    font-weight: getWeight(regular);
+    font-weight: weight(regular);
     margin: 1rem auto 0;
-    color: getColor(neutral, darkest);
+    color: color(neutral, darkest);
   }
 
   &:hover {
-    background: getColor-rgba(.4, neutral, light);
+    background: color(neutral, light, .4);
 
     h3 {
-      color: getColor(primary);
+      color: color(primary);
     }
 
     p {
-      color: getColor(neutral, darkest);
+      color: color(neutral, darkest);
     }
   }
 

@@ -3,10 +3,15 @@
 // -----------------------------------------------------------------------------
 
 
-@function getFont($font: primary) {
-  @return map-get($fonts, $font);
+// Font Family Getter Functions
+
+@function font($font: 'primary') {
+  @return map-get($_fonts, $font);
 }
 
-@function getWeight($weight: regular) {
-  @return map-get($weights, $weight);
+
+// Font Weight Getter Function
+
+@function weight($weight: 'regular') {
+  @return map-get($_weights, $weight);
 }

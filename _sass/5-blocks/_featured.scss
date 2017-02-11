@@ -4,11 +4,11 @@
 
 
 .featured {
-  border-bottom: 1px solid getColor(neutral, light);
+  border-bottom: 1px solid color(neutral, light);
 
   header {
     padding-bottom: 3rem;
-    border-bottom: 1px solid getColor(neutral, light);
+    border-bottom: 1px solid color(neutral, light);
     text-align: center;
 
     h2 {

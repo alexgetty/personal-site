@@ -21,7 +21,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background: getColor(neutral, lightest);
+  background: color(neutral, lightest);
 
   & > header {
     flex-grow: 1;

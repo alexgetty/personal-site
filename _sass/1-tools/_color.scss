@@ -3,14 +3,15 @@
 // -----------------------------------------------------------------------------
 
 
-@function getColor($palette, $shade: base) {
-  @return map-get(map-get($colors, $palette), $shade);
-}
+@function color($palette, $shade: 'base', $alpha: 1) {
 
-@function getColor-rgb($palette, $shade: base) {
-  @return rgba(map-get(map-get($colors, $palette), $shade), 1);
-}
+  // Solid Colors
+  @if $alpha == 1 {
+    @return map-get(map-get($_colors, $palette), $shade);
+  }
 
-@function getColor-rgba($alpha, $palette, $shade: base) {
-  @return rgba(map-get(map-get($colors, $palette), $shade), $alpha);
+  // Transparent Colors
+  @else {
+    @return rgba(map-get(map-get($_colors, $palette), $shade), $alpha);
+  }
 }
