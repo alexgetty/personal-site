@@ -38,6 +38,6 @@ body {
 }
 
 main {
-  @include animation('fade-in');
+  @include animation(fade-in);
   position: relative;
 }

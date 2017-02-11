@@ -4,7 +4,7 @@
 
 
 .container > footer {
-  @include animation('fade-in');
+  @include animation(fade-in);
   background: color(neutral, lightest);
   padding: .5rem 1rem;
   text-align: center;
