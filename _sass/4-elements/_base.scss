@@ -22,7 +22,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background: color(neutral, lightest);
+  background: color(primary);
 
   & > header {
     flex-grow: 1;

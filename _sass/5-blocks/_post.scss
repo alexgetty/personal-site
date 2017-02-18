@@ -4,6 +4,36 @@
 
 .post {
 
+  .post-header {
+    padding-top: 6rem;
+
+    @include from(medium){
+      padding-top: 10rem;
+    }
+  }
+
+  .post-image {
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include until(medium){
+      margin: 0 4rem;
+    }
+  }
+
+  .title {
+    padding: 0 1rem 2rem;
+    font-style: italic;
+  }
+
+  .post-image + .title {
+    padding: 4rem 1rem 2rem;
+  }
+
   h1 {
     text-align: center;
   }
@@ -43,10 +73,6 @@
     & + p {
       margin-top: 2rem;
     }
-  }
-
-  .title {
-    padding: 8rem 1rem 2rem;
   }
 
   footer {

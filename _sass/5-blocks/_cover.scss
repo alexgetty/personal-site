@@ -11,45 +11,9 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: color(neutral, lightest);
   text-align: center;
 
-  .title {
-    @include animation(fade-in);
-    position: relative;
-    z-index: 1;
-    margin: auto;
-    padding: 6rem 1rem 6rem;
-    text-align: center;
-
-    h1 {
-      font-size: size(largest);
-      margin: 0 auto 1rem;
-      text-align: center;
-
-      @include from(medium){
-        font-size: size(yuge);
-      }
-    }
-
-    p {
-      font-size: size(large);
-      max-width: 40rem;
-      margin: 0 auto;
-
-      @include until(medium){
-        margin: 2em auto;
-      }
-    }
-
-    time {
-      display: inline-block;
-      font-size: size(smaller);
-      opacity: .7;
-      margin-bottom: 1rem;
-    }
-  }
-
+/*
   .cover-image {
     position: absolute;
     top: 0;
@@ -89,7 +53,9 @@
         margin-top: -4rem;
       }
     }
+
   }
+  */
 
   &.--small {
     height: auto;

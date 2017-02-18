@@ -3,7 +3,12 @@ layout: default
 ---
 
 <article class="post">
-  <header class="cover --variable">
+  <header class="post-header">
+    {% if page.image %}
+    <figure class="post-image">
+      <img src="{{site.baseurl}}/img/posts/{{page.image}}" alt="{{ page.title }}" width="{{page.image-width}}" height="{{page.image-height}}" />
+    </figure>
+    {% endif %}
     <div class="title">
       <time>{{ page.date | date: "%B %-d, %Y" }}</time>
       <h1>{{ page.title }}</h1>
