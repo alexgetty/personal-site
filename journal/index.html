@@ -1,10 +1,15 @@
 ---
 layout: default
 section: journal
+description: My thoughts at the intersection of art, design, technology, and culture.
+keywords: Writing, Blog, Essays, Art, Design, Technology, Culture
 ---
 
 <header class="cover --small">
-  <h1 class="title">Journal</h1>
+  <div class="title">
+    <h1 >Journal</h1>
+    <p>My thoughts at the intersection of art, design, technology, and culture.</p>
+  </div>
 </header>
 <ol class="journal">
   {% for post in site.posts %}
@@ -14,8 +19,8 @@ section: journal
         <time>{{ post.date | date: "%B %-d, %Y" }}</time>
         <h3>{{ post.title }}</h3>
 
-        {% if post.teaser %}
-        <p>{{ post.teaser }}</p>
+        {% if post.description %}
+        <p>{{ post.description }}</p>
         {% endif %}
       </article>
     </a>

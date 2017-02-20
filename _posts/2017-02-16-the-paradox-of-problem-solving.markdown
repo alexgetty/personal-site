@@ -2,11 +2,12 @@
 layout: post
 section: journal
 title:  The Paradox of Problem Solving
-date:   2017-02-16
+description: Not all problems can be solved, but that doesn't mean we shouldn't try.
+keywords: design, design thinking, systems, networks, causality, wicked problems, problems, problem solving
+date: 2017-02-16
 image: paradox-of-problem-solving.png
 image-width: 340px
 image-height: 220px
-categories: design, systems, causality
 permalink: /journal/the-paradox-of-problem-solving
 redirect_from:
   - /the-paradox-of-problem-solving

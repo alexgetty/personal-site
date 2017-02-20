@@ -2,8 +2,9 @@
 layout: post
 section: tutorial
 title:  How to Sass up your Colors
+description: Managing colors using Sass maps and mixins.
+keywords: front-end, sass, scss, color, design, maps, mixins
 date:   2017-01-17
-categories: front-end, sass
 permalink: /tutorial/how-to-sass-up-your-colors
 redirect_from:
   - /how-to-sass-up-your-colors

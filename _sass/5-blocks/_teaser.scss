@@ -8,7 +8,7 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 3rem 2rem;
+  padding: 3rem 0rem;
 
   time {
     font-size: size(smaller);
@@ -23,8 +23,9 @@
 
   p {
     font-weight: weight(regular);
-    margin: 1rem auto 0;
-    color: color(neutral, darkest);
+    margin: .5rem auto 0;
+    color: color(neutral);
+    max-width: 40rem;
   }
 
   &:hover {
@@ -35,7 +36,7 @@
     }
 
     p {
-      color: color(neutral, darkest);
+      color: color(neutral);
     }
   }
 
