@@ -4,7 +4,7 @@
 
 
 blockquote {
-  width: 32rem;
+  max-width: 32rem;
   margin: 1rem auto 2rem;
 
   &:before {
@@ -24,11 +24,31 @@ blockquote {
     font-weight: weight(bold);
     font-size: size(large);
     color: color(neutral, darkest);
+
+		& + p {
+			margin-top: 2rem;
+		}
   }
 
-  footer {
+  cite {
+		display: block;
     max-width: 30rem;
-    margin: .38rem 0 0;
-    font-size: size(small);
+    margin-top: 1rem;
+		padding: 0 1rem;
+
+		&:before {
+			content: "- ";
+		}
   }
+
+	&.-small {
+		max-width: 30rem;
+
+		p {
+			font-size: size(regular);
+			& + p {
+				margin-top: 1rem;
+			}
+		}
+	}
 }
