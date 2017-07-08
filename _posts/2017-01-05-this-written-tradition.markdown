@@ -2,7 +2,7 @@
 layout: post
 section: journal
 title:  This Written Tradition
-description: Writing is an proven method not only for communication, but for thinking
+description: Writing is a proven method not only for communication, but for thinking
 keywords: writing, thinking, civilization, technology, culture, history, knowledge
 date:   2017-01-05
 permalink: /journal/this-written-tradition
