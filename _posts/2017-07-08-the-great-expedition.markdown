@@ -5,7 +5,7 @@ title:  The Compulsive Creative
 description:
 keywords: creativity
 date: 2017-06-02
-description: Creativity is always on, and there is no off switch.
+description: creativity is always on, and there is no off switch.
 permalink: /journal/the-compulsive-creative
 redirect_from:
   - /the-compulsive-creative
