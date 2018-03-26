@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-@function color($palette, $shade: 'base', $alpha: 1) {
+@function color($palette: 'neutral', $shade: 'base', $alpha: 1) {
 
   // Solid Colors
   @if $alpha == 1 {

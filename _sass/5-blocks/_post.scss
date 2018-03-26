@@ -1,13 +1,11 @@
-
 // COMPONENTS / POST
 // -----------------------------------------------------------------------------
 
 .post {
-
   .post-header {
     padding-top: 6rem;
 
-    @include from(medium){
+    @include from(medium) {
       padding-top: 10rem;
     }
   }
@@ -20,9 +18,16 @@
       height: auto;
     }
 
-    @include until(medium){
+    @include until(medium) {
       margin: 0 4rem;
     }
+  }
+
+  .content-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
   }
 
   .title {
@@ -47,7 +52,10 @@
     }
   }
 
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
