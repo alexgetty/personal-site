@@ -15,7 +15,7 @@ Managing colors is an important part of every project. It makes sense to invest 
 Check out the code below, then keep reading for more about how and why I’ve chosen this approach. If you are familiar with Sass, you probably understand what’s going on. Maybe you’re already using something similar. If you think you have something better, [hit me up](mailto:hello@alexgetty.co) and tell me about it!
 
 ## The Code
-<script src="https://gist.github.com/TheDataDesigner/c739b8a982b7e6517ccc63f114f72c3f.js?ts=2"></script>
+<script src="https://gist.github.com/AlexGetty/c739b8a982b7e6517ccc63f114f72c3f.js?ts=2"></script>
 
 ## The Breakdown
 
